@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: century gothic;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px; */
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    width: 35%;
+    background-color: #221919;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+input,
+select {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #d1a97e;
+    color: white;
+    font-family: century gothic;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+label[ for="your phone number"] {
+    display: block;
+    position: absolute;
+    top: 185px;
+    color: #999999;
+    /* text-transform: uppercase; */
+    transition: 0.3s;
+}
+
+label[ for="your name"] {
+    display: block;
+    position: absolute;
+    top: 130px;
+    color: #999999;
+    /* text-transform: uppercase; */
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+input:placeholder-shown~label[ for="your name"] {
+    font-size: 1em;
+    /* top: 20px; */
+    display: block;
+    /* position: absolute; */
+}
+
+input:placeholder-shown~label[ for="your phone number"] {
+    font-size: 1em;
+    /* top: 20px; */
+    display: block;
+    /* position: absolute; */
+}
+
+input:focus {
+    border-image: linear-gradient(to right, #ef5a03, #d1d357);
+    border-image-slice: 1;
+}
+
+input:focus~label[ for="your name"] {
+    display: block;
+    /* position: absolute; */
+    top: 120px;
+    /* font-size: 1em; */
+    color: #ef5a03;
+}
+
+:required {
+    border: red;
+}
+
+.left {
+    width: 65%;
+    background-image: url('images/14.jpg');
+    -webkit-background-size: cover;
+    /* pour Chrome et Safari */
+    -moz-background-size: cover;
+    /* pour Firefox */
+    -o-background-size: cover;
+    /* pour Opera */
+    background-size: cover;
+    /* version standardisée */
+    background-position: center;
+}
+
+.verify {
+    font-size: small;
+    position: relative;
+    bottom: 25px;
+    color: #d1a97e
+}
+
+.bouton {
+    font-size: 14px;
+    width: 30%;
+    background-color: #d1a97e;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+h3 {
+    text-align: left;
+}
+
+.selec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.cercle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.quatre {
+    height: 40px;
+    background-color: #d1a97e;
+    width: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cercle4 {
+    margin-left: 6%;
+    margin-top: 4%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #221919;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    flex-direction: row;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* @media screen and (max-width:800px) {
+    .container {
+        width: 50%;
+    }
+} */
